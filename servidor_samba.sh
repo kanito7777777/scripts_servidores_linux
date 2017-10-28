@@ -1,5 +1,11 @@
 #! /bin/bash
 
+# Desarrollado por: Ing. Saul Mamani Mamani
+# Twitter: @kanito777
+# Email: luas0_1@yahoo.es
+# Celular: +591 76137269
+
+
 if [ $(whoami) = 'root' ]
 then
         echo 'Intente de nuevo con un usuario normal, no como root'

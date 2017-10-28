@@ -9,8 +9,8 @@ else
 
 	usuario=$(whoami)
 
-	rutaCarpeta=/home/$usuario/compartido_saul_$usuario
-	
+	rutaCarpeta=/home/$usuario/compartido_samba_$usuario
+
 	echo $rutaCarpeta
 
 	if [ -d $rutaCarpeta  ]
@@ -19,7 +19,7 @@ else
 	else
 		mkdir $rutaCarpeta
 		chmod -R 775 $rutaCarpeta
-		echo 'carpeta creada..'
+		echo 'carpeta creada en: ' $rutaCarpeta
 	fi
 
 	rutaSamba=/etc/samba/smb.conf

@@ -4,7 +4,7 @@
 # Twitter: @kanito777
 # Email: luas0_1@yahoo.es
 # Celular: +591 76137269
-
+# Distribuciones Debian
 
 if [ $(whoami) = 'root' ]
 then
@@ -30,7 +30,7 @@ else
 
 	rutaSamba=/etc/samba/smb.conf
 	sudo /bin/su -c "echo '' >> "$rutaSamba
-	sudo /bin/su -c "echo '[compartido_saul_'$usuario']' >> "$rutaSamba
+	sudo /bin/su -c "echo '[compartido_samba_'$usuario']' >> "$rutaSamba
 	sudo /bin/su -c "echo 'path='$rutaCarpeta >>"$rutaSamba
 	sudo /bin/su -c "echo 'read only=no'>>"$rutaSamba
 	sudo /bin/su -c "echo 'security=share'>>"$rutaSamba
